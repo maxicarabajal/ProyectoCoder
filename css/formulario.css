@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/*============================================
+-----------| S U B    B A R R A |-------------
+=============================================*/
+
+.sub-barra{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+.atencion{
+    text-decoration: none;
+    color: #727272;
+    font-weight: 300;
+    transition: 0,2s;
+}
+
+
+
+.atencion:hover{
+    transform: scale(1.1);
+}
+
+.contenedor-atencion{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenedor-login{
+    background-color: #ffbc0d;
+    border-radius: 4px;
+    padding: 8px;
+    transition: 0,2s;
+}
+
+.login{
+    text-decoration: none;
+    color: #1a0e03;
+    font-weight: 300;
+}
+
+.contenedor-login:hover{
+    background-image: linear-gradient(to top, #00000033 0%, #00000031 100%);
+
+}
+
+.fa-regular{
+    font-size: 18px;
+    color: #1a0e03;
+
+}
+
+.logo-barra{
+    width: 225px;
+    height: auto;
+    cursor: pointer;
+}
+
+ 
+
+
+
+/*============================================
+-------------| B A R R A   N A V |------------
+=============================================*/
+
+.menu-nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #ffbc0d;
+    /*background-color: #1e2831;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-nav{
+    margin: 0px 15px;
+    list-style: none;
+}
+.item-nav a{
+    text-decoration: none;
+    color:#271c11;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.item-nav:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*============================================
+------------| F O R M U L A R I O |-----------
+=============================================*/
+
+
+.contenedor-formulario{
+    display: flex;
+    width: 100%;
+    height: 75vh;;
+    background-color: #ffffff;
+}
+
+.contenedor-imagen-form{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/galeria1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.contenedor-formulario-caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+   
+}
+
+.formulario{
+    display: flex;
+    background-color: #ffffff;
+    width: 50%;
+    height: 80%;
+    border-radius: 4px;
+    border: 1px solid #b6b6b6 ;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px #4d4d4d;
+}
+
+.contenedor-titulo-form{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-form{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #002c53;
+    font-weight: 600;
+}
+
+.contenedor-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.input-form{
+    outline: none;
+    padding: 3px;
+    width: 80%;
+    height: 35px;
+    margin: 10px 0px;
+    border: 0px;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.input-form:focus{
+    outline: none;
+}
+
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.boton-login{
+    margin: 0px 10px;
+    background-color: #ffbc0d;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.boton-login:hover{
+    transform: scale(1.1);
+}
+
+.contenedor-recuperar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.recuperar-contra{
+    text-decoration: none;
+    color: #002c53;
+    transition: 0.2s;
+}
+
+.recuperar-contra:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+/*============================================
+---------------| F O O T E R |----------------
+=============================================*/
+
+.contenedor-footer{
+    width: 100%;
+    height: 100px;
+    background-color:#002c53;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.redes{
+    display: flex;
+
+}
+.logo-redes{
+    margin: 0px 20px;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0,2s;
+}
+
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+
+.contenedor-cajas{
+    transition: 0,9s;
+}
+
+.contenedor-cajas:hover{
+    transform: scale(1.05);
+}
+
+.politica{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.politica-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.politica-li{
+    margin: 0px 20px;
+    color: #fff;
+    transition: 0,2s;
+
+}
+.politica-li a{
+    color: #fff;
+
+}
+
+.politica-li:hover{
+    transform: scale(1.1);
+}
+
+.boton-app{
+    background-color: #ffbc0d;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    transition: 0,2s;
+}
+
+.boton-app:hover{
+    transform: scale(1.1);
+}
+
+/*=========================================
+----------| M E D I A    Q U E R Y |-------
+=========================================-*/
+
+@media(max-width: 375px){
+    .sub-barra{
+        height: 80px;
+        padding: 0px 3%;
+    }
+    .atencion{
+        font-size: 14px;
+    }
+    .contenedor-login{
+        padding: 3px;
+    }
+    .login{
+        font-size: 14px;
+    }
+    
+    .fa-regular{
+        font-size: 0px;
+    }
+    
+    .logo-barra{
+        margin-left: 5px;
+        width: 180px;
+    }
+
+    /*Nav*/
+    .item-nav{
+        margin: 0px 5px;
+    }
+    .item-nav a{
+        font-size: 16px;
+    }
+
+    /*Form*/
+
+    .contenedor-imagen-form{
+        display: none;
+    }
+    
+    .contenedor-formulario-caja{
+        width: 100%;
+        height: 100%;
+       
+    }
+    
+    .formulario{
+        width: 80%;
+        height: 80%;
+    }
+    
+    .titulo-form{
+        font-size: 28px
+    }
+
+    /*footer*/
+    
+    .contenedor-footer{
+        width: 100%;
+        height: 250px;
+        background-color:#002c53;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 2%;
+        flex-direction: column;
+    }
+    
+    .redes{
+        width: 100%;
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    
+    
+    .politica{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .politica-ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .politica-li{
+        margin: 0px 20px;
+        color: #fff;
+        transition: 0,2s;
+    
+    }
+    .politica-li a{
+        color: #fff;
+    
+    }
+    
+    .politica-li:hover{
+        transform: scale(1.1);
+    }
+    
+    .app{
+        margin-bottom: 20px;
+    }
+
+    .boton-app{
+        background-color: #ffbc0d;
+        padding: 8px;
+        border-radius: 4px;
+        border: none;
+        transition: 0,2s;
+    }
+    
+    .boton-app:hover{
+        transform: scale(1.1);
+    }
+}
+ 

@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/*============================================
+-----------| S U B    B A R R A |-------------
+=============================================*/
+
+.sub-barra{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+.atencion{
+    text-decoration: none;
+    color: #727272;
+    font-weight: 300;
+    transition: 0,2s;
+}
+
+
+
+.atencion:hover{
+    transform: scale(1.1);
+}
+
+.contenedor-atencion{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenedor-login{
+    background-color: #ffbc0d;
+    border-radius: 4px;
+    padding: 8px;
+    transition: 0,2s;
+}
+
+.login{
+    text-decoration: none;
+    color: #1a0e03;
+    font-weight: 300;
+}
+
+.contenedor-login:hover{
+    background-image: linear-gradient(to top, #00000033 0%, #00000031 100%);
+
+}
+
+.fa-regular{
+    font-size: 18px;
+    color: #1a0e03;
+
+}
+
+.logo-barra{
+    width: 225px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+  
+
+
+
+/*============================================
+-------------| B A R R A   N A V |------------
+=============================================*/
+
+.menu-nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #ffbc0d;
+    /*background-color: #1e2831;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-nav{
+    margin: 0px 15px;
+    list-style: none;
+}
+.item-nav a{
+    text-decoration: none;
+    color:#271c11;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.item-nav:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*============================================
+----| C A R I L L A   P R I N C I P A L |-----
+=============================================*/
+
+
+.contenedor-carilla-principal{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(to top, #00000083 0%, #00000088 100%), url(../img/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    
+}
+.carilla-principal{
+    margin-top: 20px;
+    margin-bottom:20px ;
+    margin-left: 20%;
+    height: auto;
+
+}
+
+
+.titulo-carilla{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+    
+
+    
+}
+.contenedor-boton-carilla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.boton-carilla{
+    background-color: #ffbc0d;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    transition: 0,2s;
+}
+
+.boton-carilla:hover{
+    transform: scale(1.1);
+}
+
+.boton-carilla a{
+    color: #fff;
+
+}
+
+/*============================================
+------------| S U B T I T U L O |-------------
+=============================================*/
+
+.subtitulo{
+    width: 100%;
+    background-image: url(../img/subtitulomenu.png);
+    background-size: cover;
+    background-position: center;
+    margin: 60px 20px;
+    height: 200px;
+}
+
+/*============================================
+-------------| G A L E R I A |----------------
+=============================================*/
+
+.contenedor-tarjetas{
+    padding: 0px 10% 10% 10%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.tarjeta {
+    background: #fff; /* Fondo blanco para las tarjetas, cambia según necesites */
+    box-shadow: 0px 2px 5px #4d4d4d;
+    display: flex;
+    flex-direction: column; /* Esto asegura que el contenido de la tarjeta fluya de arriba hacia abajo */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Distribuye el espacio interior de manera uniforme */
+    padding: 20px; /* Espaciado interno para el contenido de la tarjeta */
+    min-height: 400px;
+}
+
+
+
+.imagen-card {
+    width: 100%; 
+    height: 200px; 
+    border-radius: 5px; 
+    object-fit: cover;
+}
+
+.titulo-card, .parrafo-card, .informacion-card {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.titulo-card{
+    font-weight: 600;
+    color: #002c53;
+}
+
+.informacion-card {
+    margin-top: 10px; /* Espacio adicional arriba del enlace, ajusta según necesites */
+    display: inline-block; /* Hace que el enlace no ocupe todo el ancho disponible */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    background-color: #ffbc0d;
+    padding: 8px;
+    border-radius: 6px;
+    color: #1a0e03;
+    transition: 0.2s;
+
+}
+
+.informacion-card:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*============================================
+----------------| O T R O S |-----------------
+=============================================*/
+
+
+.contenedor-grid{
+    width: 100%;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1px;
+    margin-top: 60px;
+
+}
+
+.contenedor-cajas{
+    background-color: #ffbc0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-grid{
+    font-size: 50px;
+    color: #1a0e03;
+}
+
+.contenedor-titulo-icon{
+    margin-top: 20px;
+}
+.titulo-icon{
+    color: #1a0e03;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titulo-icon a{
+    text-decoration: none;
+}
+
+
+/*============================================
+---------------| F O O T E R |----------------
+=============================================*/
+
+.contenedor-footer{
+    width: 100%;
+    height: 100px;
+    background-color:#002c53;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.redes{
+    display: flex;
+
+}
+.logo-redes{
+    margin: 0px 20px;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0,2s;
+}
+
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+
+.contenedor-cajas{
+    transition: 0,9s;
+}
+
+.contenedor-cajas:hover{
+    transform: scale(1.05);
+}
+
+.politica{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.politica-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.politica-li{
+    margin: 0px 20px;
+    color: #fff;
+    transition: 0,2s;
+
+}
+.politica-li a{
+    color: #fff;
+
+}
+
+.politica-li:hover{
+    transform: scale(1.1);
+}
+
+.boton-app{
+    background-color: #ffbc0d;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    transition: 0,2s;
+}
+
+.boton-app:hover{
+    transform: scale(1.1);
+}
+

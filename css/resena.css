@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/*============================================
+-----------| S U B    B A R R A |-------------
+=============================================*/
+
+.sub-barra{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+.atencion{
+    text-decoration: none;
+    color: #727272;
+    font-weight: 300;
+    transition: 0,2s;
+}
+
+
+
+.atencion:hover{
+    transform: scale(1.1);
+}
+
+.contenedor-atencion{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenedor-login{
+    background-color: #ffbc0d;
+    border-radius: 4px;
+    padding: 8px;
+    transition: 0,2s;
+}
+
+.login{
+    text-decoration: none;
+    color: #1a0e03;
+    font-weight: 300;
+}
+
+.contenedor-login:hover{
+    background-image: linear-gradient(to top, #00000033 0%, #00000031 100%);
+
+}
+
+.fa-regular{
+    font-size: 18px;
+    color: #1a0e03;
+
+}
+
+.logo-barra{
+    width: 225px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+  
+
+
+
+/*============================================
+-------------| B A R R A   N A V |------------
+=============================================*/
+
+.menu-nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #ffbc0d;
+    /*background-color: #1e2831;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-nav{
+    margin: 0px 15px;
+    list-style: none;
+}
+.item-nav a{
+    text-decoration: none;
+    color:#271c11;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.item-nav:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*============================================
+----| C A R I L L A   P R I N C I P A L |-----
+=============================================*/
+
+.contenedor-resena{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.resenas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 70%;
+    height: 90%;
+    border: 1px solid #ffbc0d;
+    border-radius: 6px;
+    flex-direction: column;
+}
+
+.contenedor-titulo-resena{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-resena{
+    text-align: center;
+    color: #002c53;
+    font-weight: 600;
+}
+
+.contenedor-input-resena{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-resena{
+    margin: 10px 0px;
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ffbc0d;
+}
+
+.input-resena:focus{
+    outline: none;
+}
+
+.selects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sel-resena{
+    margin: 0px 60px;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #ffbc0d;
+    border-radius: 10px;
+}
+
+.sel-resena:focus{
+    outline: none;
+}
+
+.contenedor-texto{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    width: 600px;
+    height: 100px;
+    border: 1px solid #ffbc0d;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.texto:focus{
+    outline: none;
+}
+
+.contenedor-boton-resena{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.boton-resena{
+    text-align: center;
+    font-size: 14px;
+    background-color: #ffbc0d;
+    color:#1a0e03;
+    padding: 10px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.boton-resena:hover{
+    transform: scale(1.1);
+}
+/*============================================
+----------------| O T R O S |-----------------
+=============================================*/
+
+
+.contenedor-grid{
+    width: 100%;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1px;
+}
+
+.contenedor-cajas{
+    background-color: #ffbc0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-grid{
+    font-size: 50px;
+    color: #1a0e03;
+}
+
+.contenedor-titulo-icon{
+    margin-top: 20px;
+}
+.titulo-icon{
+    color: #1a0e03;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titulo-icon a{
+    text-decoration: none;
+}
+
+
+/*============================================
+---------------| F O O T E R |----------------
+=============================================*/
+
+.contenedor-footer{
+    width: 100%;
+    height: 100px;
+    background-color:#002c53;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.redes{
+    display: flex;
+
+}
+.logo-redes{
+    margin: 0px 20px;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0,2s;
+}
+
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+
+.contenedor-cajas{
+    transition: 0,9s;
+}
+
+.contenedor-cajas:hover{
+    transform: scale(1.05);
+}
+
+.politica{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.politica-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.politica-li{
+    margin: 0px 20px;
+    color: #fff;
+    transition: 0,2s;
+
+}
+.politica-li a{
+    color: #fff;
+
+}
+
+.politica-li:hover{
+    transform: scale(1.1);
+}
+
+.boton-app{
+    background-color: #ffbc0d;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    transition: 0,2s;
+}
+
+.boton-app:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width: 375px){
+    .sub-barra{
+        height: 80px;
+        padding: 0px 3%;
+    }
+    .atencion{
+        font-size: 14px;
+    }
+    .contenedor-login{
+        padding: 3px;
+    }
+    .login{
+        font-size: 14px;
+    }
+    
+    .fa-regular{
+        font-size: 0px;
+    }
+    
+    .logo-barra{
+        margin-left: 5px;
+        width: 180px;
+    }
+
+    /*Nav*/
+    .item-nav{
+        margin: 0px 5px;
+    }
+    .item-nav a{
+        font-size: 16px;
+    }
+
+    /*Resena*/
+
+    
+    .titulo-resena{
+        font-size: 20px;
+    }
+    
+    .contenedor-input-resena{
+        margin: 10px 0px;
+    }
+    .input-resena{
+        margin: 10px 0px;
+        width: 230px;
+        height: 30px;
+    }
+    
+    .sel-resena{
+        margin: 0px 5px;
+        width: 110px;
+        height: 30px;
+    }
+    
+    .contenedor-texto{
+        margin-top: 10px;
+    }
+    
+    .texto{
+        width: 230px;
+        height: 100px;
+    }
+    
+    .boton-resena{
+        width: 230px;
+        height: 40px;
+    }
+
+    /*Otros*/
+
+    .contenedor-grid{
+        min-height: 200px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1px;
+    }
+    
+    .logo-grid{
+        font-size: 30px;
+    }
+    
+    .contenedor-titulo-icon{
+        margin-top: 5px;
+    }
+    .titulo-icon{
+        font-size: 14px;
+    
+    }
+    
+
+    
+    /*footer*/
+    
+    .contenedor-footer{
+        width: 100%;
+        height: 250px;
+        background-color:#002c53;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 2%;
+        flex-direction: column;
+    }
+    
+    .redes{
+        width: 100%;
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    
+    
+    .politica{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .politica-ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .politica-li{
+        margin: 0px 20px;
+        color: #fff;
+        transition: 0,2s;
+    
+    }
+    .politica-li a{
+        color: #fff;
+    
+    }
+    
+    .politica-li:hover{
+        transform: scale(1.1);
+    }
+    
+    .app{
+        margin-bottom: 20px;
+    }
+
+    .boton-app{
+        background-color: #ffbc0d;
+        padding: 8px;
+        border-radius: 4px;
+        border: none;
+        transition: 0,2s;
+    }
+    
+    .boton-app:hover{
+        transform: scale(1.1);
+    }
+}
+ 
