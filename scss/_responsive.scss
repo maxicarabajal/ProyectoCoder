@@ -1,0 +1,93 @@
+@media (max-width: 440px) {
+    .text-nav {
+      font-size: 12px;
+    }
+  
+    .logo-nav {
+      width: 150px;
+    }
+  }
+  
+@media (max-width: 350px) {
+    .text-nav {
+      display: none;
+    }
+  
+    .boton-nav {
+      display: block;
+    }
+  
+    .item-nav {
+      font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .subtitulo {
+      background-image: url(../img/menu-subtitulo-responsive.png);
+      height: 150px;
+      margin: 0px 0px;
+    }
+}
+  
+@media (max-width: 575px) {
+    .caja {
+      border-bottom: 1px solid #fff;
+    }
+  
+    .logo-grid {
+      font-size: 30px;
+    }
+  
+    .titulo-icon {
+      font-size: 14px;
+    }
+}
+@media (max-width: 350px) {
+    .politica-footer {
+      flex-direction: column;
+    }
+}
+
+@media (max-width: 415px) {
+    .contenedor-resena {
+      height: 110vh;
+    }
+  
+    .nombre-apellido {
+      display: flex;
+      flex-direction: column;
+    }
+}
+@media (max-width: 435px) {
+    .login-formulario {
+      width: 80%;
+    }
+  
+    .boton {
+      padding: 1px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 330px) {
+    .boton-login {
+      flex-direction: column;
+    }
+  
+    .login-formulario {
+      height: 90%;
+    }
+  }
+  
+  @media (max-width: 915px) {
+    .login-div1 {
+      display: none;
+    }
+  
+    .login-div2 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  

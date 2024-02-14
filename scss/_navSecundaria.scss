@@ -1,0 +1,36 @@
+/*===========================================================================================================
+---------------------------------------| N A V   S E C U N D A R I A |---------------------------------------
+=============================================================================================================
+*/
+
+.contenedor-nav-secundaria {
+    height: 40px;
+  }
+  
+  .nav-secundaria {
+    list-style-type: none;
+  
+    /* Remueve los bullets */
+    padding-left: 0;
+  
+    /* Remueve el padding */
+    margin: 0;
+  }
+  
+  .item-nav {
+    list-style: none;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  .atencion-nav:hover {
+    transform: scale(1.1);
+  }
+  
+  .item-nav a {
+    text-decoration: none;
+    color: #1a0e03;
+  }
+  

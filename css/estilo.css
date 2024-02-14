@@ -29,6 +29,10 @@
     color: #1a0e03;
 }
 
+.login-nav:hover{
+    background-image: linear-gradient(to top, #00000033 0%, #00000031 100%);
+}
+
 @media(max-width: 440px){
     .text-nav{
         font-size: 12px;
@@ -71,6 +75,15 @@
 .item-nav{
     list-style: none;
 }
+
+.item-nav:hover{
+    transform: scale(1.1);
+}
+
+.atencion-nav:hover{
+    transform: scale(1.1);
+}
+
 .item-nav a{
     text-decoration: none;
     color: #1a0e03;
@@ -94,6 +107,9 @@
     font-weight: 800;
 }
 
+.boton-oferta:hover{
+    background-image: linear-gradient(to top, #00000033 0%, #00000031 100%);
+}
 
 /*===========================================================================================================
 -----------------------------------------| S U B T I T U L O     M E N U |-----------------------------------------------
@@ -178,10 +194,22 @@
 =============================================================================================================
 */
 
+.logo-redes:hover{
+    transform: scale(1.1);
+}
+
+.politica-li:hover{
+    transform: scale(1.1);
+}
+
 
 .pie-pagina{
     background-color:#002c53;
 
+}
+
+.boton-app:hover{
+    background-image: linear-gradient(to top, #00000033 0%, #00000031 100%);
 }
 
 @media(max-width:350px){

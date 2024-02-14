@@ -1,0 +1,44 @@
+/*===========================================================================================================
+-----------------------------------------| S U B     O P C I O N E S |---------------------------------------
+=============================================================================================================
+*/
+
+.contenedor-opciones {
+    height: 300px;
+  }
+  
+  .fila-opciones {
+    height: 100%;
+  }
+  
+  .caja {
+    padding: 5px;
+    grid-gap: 1px;
+    border-right: 1px solid #fff;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .contenedor-titulo-icon {
+    margin-top: 10px;
+  }
+  
+  .logo-grid {
+    font-size: 50px;
+    color: #1a0e03;
+  }
+  
+  .titulo-icon {
+    color: #1a0e03;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: 600;
+  
+    a {
+      text-decoration: none;
+    }
+  }
+  
