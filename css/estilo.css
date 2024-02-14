@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
-
 *{
     padding: 0;
     margin: 0;
@@ -8,288 +7,149 @@
     font-family:'Poppins', sans-serif ;
 }
 
+/*===========================================================================================================
+-------------------------------------------| N A V   P R I M A R I A |---------------------------------------
+=============================================================================================================
+*/
 
-body{
-    background-color: rgb(255, 255, 255);
-}
-
-/*============================================
------------| S U B    B A R R A |-------------
-=============================================*/
-
-.sub-barra{
-    display: flex;
+.contenedor-nav-primaria{
     height: 100px;
-    width: 100%;
-    background-color: #fff;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10%;
-}
-.atencion{
-    text-decoration: none;
-    color: #727272;
-    font-weight: 300;
-    transition: 0,2s;
 }
 
-
-
-.atencion:hover{
-    transform: scale(1.1);
+.boton-nav{
+    display: none;
 }
 
-.contenedor-atencion{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.contenedor-login{
-    background-color: #ffbc0d;
-    border-radius: 4px;
-    padding: 8px;
-    transition: 0,2s;
-}
-
-.login{
-    text-decoration: none;
-    color: #1a0e03;
-    font-weight: 300;
-}
-
-.contenedor-login:hover{
-    background-image: linear-gradient(to top, #00000033 0%, #00000031 100%);
-
-}
-
-.fa-regular{
-    font-size: 18px;
-    color: #1a0e03;
-
-}
-
-.logo-barra{
-    width: 225px;
+.logo-nav{
+    width: 200px;
     height: auto;
-    cursor: pointer;
 }
 
-
-  
-
-
-
-/*============================================
--------------| B A R R A   N A V |------------
-=============================================*/
-
-.menu-nav{
-    display: flex;
-    width: 100%;
-    height: 50px;
-    background-color: #ffbc0d;
-    /*background-color: #1e2831;*/
-    justify-content: center;
-    align-items: center;
+.login-nav{
+    color: #1a0e03;
 }
 
-.contenedor-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media(max-width: 440px){
+    .text-nav{
+        font-size: 12px;
+    }
+    .logo-nav{
+        width: 150px;
+    }
 }
 
+@media(max-width: 350px){
+
+    .text-nav{
+        display: none;
+    }
+
+    .boton-nav{
+        display: block;
+    }
+
+    .item-nav{
+        font-size: 12px;
+    }
+}
+
+/*===========================================================================================================
+---------------------------------------| N A V   S E C U N D A R I A |---------------------------------------
+=============================================================================================================
+*/
+
+.contenedor-nav-secundaria{
+    height: 40px;
+}
+
+.nav-secundaria{
+    list-style-type: none; /* Remueve los bullets */
+    padding-left: 0; /* Remueve el padding */
+    margin: 0;
+}
 
 .item-nav{
-    margin: 0px 15px;
     list-style: none;
 }
 .item-nav a{
     text-decoration: none;
-    color:#271c11;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-}
-
-.item-nav:hover{
-    transform: scale(1.1);
+    color: #1a0e03;
 }
 
 
+/*===========================================================================================================
+-----------------------------| E N C A B E Z A D O     P R I N C I P A L |-----------------------------------
+=============================================================================================================
+*/
 
-/*============================================
-----| C A R I L L A   P R I N C I P A L |-----
-=============================================*/
 
-
-.contenedor-carilla-principal{
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    width: 100%;
-    height: 60vh;
+.carilla{
     background-image: linear-gradient(to top, #00000083 0%, #00000088 100%), url(../img/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg);
+    height: 60vh;
     background-position: center;
     background-size: cover;
-    justify-content: center;
-    
-}
-.carilla-principal{
-    margin-top: 20px;
-    margin-bottom:20px ;
-    margin-left: 20%;
-    height: auto;
-
 }
 
-
-.titulo-carilla{
-    font-size: 4rem;
+.titulo{
     font-weight: 800;
-    color: #fff;
-    
-
-    
-}
-.contenedor-boton-carilla{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 
-.boton-carilla{
-    background-color: #ffbc0d;
-    padding: 8px;
-    border-radius: 4px;
-    border: none;
-    transition: 0,2s;
-}
 
-.boton-carilla:hover{
-    transform: scale(1.1);
-}
+/*===========================================================================================================
+-----------------------------------------| S U B T I T U L O     M E N U |-----------------------------------------------
+=============================================================================================================
+*/
 
-.boton-carilla a{
-    color: #fff;
-
-}
-
-/*============================================
-------------| S U B T I T U L O |-------------
-=============================================*/
 
 .subtitulo{
     width: 100%;
-    background-image: url(../img/imgsubtitulo2.png);
+    background-image: url(../img/menu-subtitulo-normal.png);
     background-size: cover;
     background-position: center;
-    margin: 60px 20px;
+    margin: 5% 0px;
     height: 200px;
 }
-
-/*============================================
--------------| G A L E R I A |----------------
-=============================================*/
-
-.contenedor-galeria{
-    width: 1100px;
-    margin: auto;
-    height: 1100px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-       "caja1 caja2 caja3" 
-       "caja6 caja5 caja3"
-       "caja6 caja4 caja4";
-    grid-gap: 10px;
+@media(max-width: 500px){
+    .subtitulo{
+        background-image: url(../img/menu-subtitulo-responsive.png);
+        height: 150px;
+        margin: 0px 0px;
+        
+    }
 }
 
-.caja:hover{
-    cursor: pointer;
-}
-
-.caja1{
-    grid-area: caja1;
-    background-image: url(../img/galeria1.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-.caja2{
-    grid-area: caja2;
-    background-image: url(../img/galeria2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.caja3{
-    grid-area: caja3;
-    background-image: url(../img/galeria3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.caja4{
-    grid-area: caja4;
-    background-image: url(../img/galeria4.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.caja5{
-    grid-area: caja5;
-    background-image: url(../img/galeria5.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.caja6{
-    grid-area: caja6;
-    background-image: url(../img/galeria6.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.imagen{
-    width: 100%;
-}
+/*===========================================================================================================
+-----------------------------------------| S U B     O P C I O N E S |---------------------------------------
+=============================================================================================================
+*/
 
 
-/*============================================
-----------------| O T R O S |-----------------
-=============================================*/
+.contenedor-opciones{
+    height: 300px;
+}
 
+.fila-opciones{
+    height: 100%;
+}
 
-.contenedor-grid{
-    width: 100%;
-    min-height: 300px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+.caja{
+    padding: 5px;
     grid-gap: 1px;
-    margin-top: 60px;
-
+    border-right:1px solid #fff ;
+}
+.caja:hover{
+    transform: scale(1.05);
 }
 
-.contenedor-cajas{
-    background-color: #ffbc0d;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.contenedor-titulo-icon{
+    margin-top: 10px;
 }
+
 .logo-grid{
     font-size: 50px;
     color: #1a0e03;
 }
 
-.contenedor-titulo-icon{
-    margin-top: 20px;
-}
 .titulo-icon{
     color: #1a0e03;
     text-decoration: none;
@@ -302,80 +162,169 @@ body{
     text-decoration: none;
 }
 
+@media(max-width:575px){
+    .caja{border-bottom: 1px solid #fff;}
+    .logo-grid{
+        font-size: 30px;
+    }
+    .titulo-icon{
+        font-size: 14px;
+    }
+}
 
-/*============================================
----------------| F O O T E R |----------------
-=============================================*/
 
-.contenedor-footer{
-    width: 100%;
-    height: 100px;
+/*===========================================================================================================
+---------------------------------------------| F O O T E R |-------------------------------------------------
+=============================================================================================================
+*/
+
+
+.pie-pagina{
     background-color:#002c53;
+
+}
+
+@media(max-width:350px){
+    .politica-footer{
+        flex-direction: column;
+    }
+}
+
+
+/*===========================================================================================================
+-----------------------------------------| S U B T I T U L O     I N D E X |-----------------------------------------------
+=============================================================================================================
+*/
+
+.subtitulo-index{
+    width: 100%;
+    background-image: url(../img/imgsubtitulo2.png);
+    background-size: cover;
+    background-position: center;
+    margin: 5% 0px;
+    height: 200px;
+}
+
+
+/*===========================================================================================================
+---------------------------------| C O N T E N E D O R    R E S E N A |--------------------------------------
+=============================================================================================================
+*/
+
+
+.contenedor-resena{
+    height: 90vh;
+}
+
+.resena{
+    width: 80%;
+    height: 90%;
+    background-color: #ffffff;
+    border: 1px solid #ffbc0d;
+}
+
+.titulo-resena{
+    color: #002c53;
+    font-weight: 600;
+}
+
+.formularios{
+    border: 1px solid #ffbc0d;
+}
+
+
+@media(max-width: 415px){
+    .contenedor-resena{
+        height: 110vh;
+    }
+    .nombre-apellido{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*===========================================================================================================
+----------------------------| C O N T E N E D O R    F O R M U L A R I O |-----------------------------------
+=============================================================================================================
+*/
+
+
+.contenedor-iniciar-sesion{
+    height: 75vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10%;
+    width: 100%;
 }
 
-.redes{
+.login-div1{
     display: flex;
-
-}
-.logo-redes{
-    margin: 0px 20px;
-    font-size: 28px;
-    color: #fff;
-    text-decoration: none;
-    transition: 0,2s;
-}
-
-.fa-brands:hover{
-    transform: scale(1.2);
-}
-
-.contenedor-cajas{
-    transition: 0,9s;
-}
-
-.contenedor-cajas:hover{
-    transform: scale(1.05);
-}
-
-.politica{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.politica-ul{
-    display: flex;
+    width: 50%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    list-style: none;
-}
-.politica-li{
-    margin: 0px 20px;
-    color: #fff;
-    transition: 0,2s;
-
-}
-.politica-li a{
-    color: #fff;
-
+    background-image: url(../img/galeria1.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-.politica-li:hover{
-    transform: scale(1.1);
+.login-div2{
+    height: 100%;
+    width: 50%;
 }
 
-.boton-app{
-    background-color: #ffbc0d;
-    padding: 8px;
-    border-radius: 4px;
-    border: none;
-    transition: 0,2s;
+.login-formulario{
+    height: 80%;
+    width: 60%;
+    box-shadow: 0px 2px 5px #4d4d4d;
+
 }
 
-.boton-app:hover{
-    transform: scale(1.1);
+.titulo-login{
+    color: #002c53;
+    font-weight: 600;
 }
 
+.input-formulario{
+    margin-top: 5%;
+}
+
+.contenedor-contra{
+    margin-bottom: 3%;
+    margin-top: 6%;
+}
+
+.recuperar-contra-login{
+    text-decoration: none;
+    color: #002c53;
+}
+
+@media(max-width:435px){
+
+    .login-formulario{
+        width: 80%;
+    }
+    .boton{
+        padding: 1px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:330px){
+    .boton-login{
+        flex-direction: column;
+    }
+
+    .login-formulario{
+        height: 90%;
+    }
+
+}
+
+@media(max-width: 915px){
+    .login-div1{
+        display: none;
+    }
+    .login-div2{
+        width: 100%;
+        height: 100%;
+    }
+}
